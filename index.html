@@ -1,0 +1,625 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Aliester - Web Developer | UI/UX Designer | Photographer</title>
+    <meta
+      name="description"
+      content="Professional portfolio of Aliester - Web Developer, UI/UX Designer and Photographer"
+    />
+
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="styles.css" />
+
+    <!-- Favicon -->
+    <link rel="icon" type="image/svg+xml" href="img/logo.png" />
+
+    <!-- Lucide Icons -->
+    <script src="https://unpkg.com/lucide@latest"></script>
+  </head>
+  <body class="light-mode">
+    <!-- Navbar -->
+    <nav id="navbar">
+      <div class="container">
+        <a href="#" class="logo">
+          <!-- We'll use CSS to handle which logo is shown based on theme -->
+          <img
+            src="img/logo2.png"
+            alt="Aliester Logo"
+            class="logo-image light-logo"
+          />
+          <img
+            src="img/logo.png"
+            alt="Aliester Logo"
+            class="logo-image dark-logo"
+          />
+        </a>
+        <div class="nav-links">
+          <a href="#about">About</a>
+          <a href="#skills">Skills</a>
+          <a href="#portfolio">Portfolio</a>
+          <a href="#contact">Contact</a>
+          <button id="theme-toggle" aria-label="Toggle dark mode">
+            <i data-lucide="sun" class="light-icon"></i>
+            <i data-lucide="moon" class="dark-icon"></i>
+          </button>
+        </div>
+        <button class="mobile-menu-btn" aria-label="Menu">
+          <i data-lucide="menu"></i>
+        </button>
+      </div>
+    </nav>
+
+    <!-- Mobile Menu -->
+    <div class="mobile-menu">
+      <div class="mobile-menu-container">
+        <a href="#about">About</a>
+        <a href="#skills">Skills</a>
+        <a href="#portfolio">Portfolio</a>
+        <a href="#contact">Contact</a>
+        <button id="mobile-theme-toggle" aria-label="Toggle dark mode">
+          <span>Toggle Dark Mode</span>
+          <i data-lucide="sun" class="light-icon"></i>
+          <i data-lucide="moon" class="dark-icon"></i>
+        </button>
+      </div>
+    </div>
+
+    <!-- Hero Section - COMPLETELY REDESIGNED -->
+    <section id="hero">
+      <div class="hero-split-container">
+        <!-- Left content area -->
+        <div class="hero-content-area">
+          <div class="hero-content">
+            <div class="animate-element">
+              <span class="highlight-tag">Welcome to my portfolio</span>
+            </div>
+            <h1 class="hero-title animate-element">
+              <span class="gradient-text">Aliester</span>
+            </h1>
+            <div class="typewriter-container animate-element">
+              <h2 class="typewriter-text">
+                <span class="typewriter-prefix">I create </span>
+                <span id="typewriter-words"></span>
+              </h2>
+            </div>
+            <p class="hero-description animate-element">
+              Transforming ideas into exceptional digital experiences through
+              code, design, and visual storytelling.
+            </p>
+            <div class="hero-cta animate-element">
+              <a href="#contact" class="btn btn-primary">Hire Me</a>
+              <a href="#portfolio" class="btn btn-outline">View Portfolio</a>
+            </div>
+            <div class="hero-stats animate-element">
+              <div class="stat-item">
+                <span class="stat-number">0.5</span>
+                <span class="stat-label">Years Experience</span>
+              </div>
+              <div class="stat-item">
+                <span class="stat-number">3+</span>
+                <span class="stat-label">Projects Completed</span>
+              </div>
+              <div class="stat-item">
+                <span class="stat-number">98%</span>
+                <span class="stat-label">Client Satisfaction</span>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Right image area -->
+        <div class="hero-image-area animate-element">
+          <div class="hero-image-container">
+            <img
+              src="img/my-photo.jpg"
+              alt="Aliester profile"
+              class="hero-image"
+            />
+            <div class="floating-badge badge-one">
+              <i data-lucide="code"></i>
+              <span>Web Developer</span>
+            </div>
+            <div class="floating-badge badge-two">
+              <i data-lucide="layers"></i>
+              <span>UI/UX Designer</span>
+            </div>
+            <div class="floating-badge badge-three">
+              <i data-lucide="camera"></i>
+              <span>Photographer</span>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Hero background elements -->
+      <div class="hero-bg-elements">
+        <div class="circle-element circle-1"></div>
+        <div class="circle-element circle-2"></div>
+        <div class="circle-element circle-3"></div>
+        <div class="square-element square-1"></div>
+        <div class="square-element square-2"></div>
+      </div>
+
+      <!-- Scroll indicator -->
+      <div class="scroll-indicator">
+        <span>Scroll</span>
+        <i data-lucide="chevron-down"></i>
+      </div>
+    </section>
+
+    <!-- Rest of the website sections remain the same -->
+    <!-- About Me Section -->
+    <section id="about" class="section">
+      <div class="container">
+        <h2 class="section-title">About Me</h2>
+        <div class="about-content">
+          <div class="about-image">
+            <img
+              src="img/my-photo.jpg"
+              alt="Aliester profile photo"
+              class="profile-img"
+            />
+          </div>
+          <div class="about-text">
+            <p>
+              Hello! I'm Aliester, a multidisciplinary creative based in the
+              digital landscape. With over 5 years of experience in web
+              development, UI/UX design, and photography, I bring a unique blend
+              of technical expertise and artistic vision to every project.
+            </p>
+            <p>
+              As a web developer, I craft clean, efficient code that brings
+              designs to life. My UI/UX design philosophy centers on creating
+              intuitive, beautiful interfaces that enhance user experience.
+              Through photography, I capture moments and emotions that tell
+              compelling visual stories.
+            </p>
+            <p>
+              I believe in the intersection of technology and creativity, where
+              innovation happens. My goal is to create digital experiences that
+              not only function flawlessly but also inspire and delight users.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section id="skills" class="section">
+      <div class="container">
+        <h2 class="section-title">My Skills</h2>
+        <div class="skills-grid">
+          <div class="skill-card">
+            <div class="skill-icon">
+              <i data-lucide="code"></i>
+            </div>
+            <h3>Web Development</h3>
+            <ul class="skill-list">
+              <li>HTML5, CSS3, JavaScript</li>
+              <li>React, Vue.js, Angular</li>
+              <li>Laravel, Node.js</li>
+              <li>Responsive Design</li>
+              <li>Performance Optimization</li>
+            </ul>
+          </div>
+          <div class="skill-card">
+            <div class="skill-icon">
+              <i data-lucide="layers"></i>
+            </div>
+            <h3>UI/UX Design</h3>
+            <ul class="skill-list">
+              <li>Figma, Adobe XD</li>
+              <li>User Research</li>
+              <li>Wireframing & Prototyping</li>
+              <li>Interface Design</li>
+              <li>Design Systems</li>
+            </ul>
+          </div>
+          <div class="skill-card">
+            <div class="skill-icon">
+              <i data-lucide="camera"></i>
+            </div>
+            <h3>Photography</h3>
+            <ul class="skill-list">
+              <li>Portrait & Urban</li>
+              <li>Product Photography</li>
+              <li>Adobe Lightroom</li>
+              <li>Adobe Photoshop</li>
+              <li>Photo Composition</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Portfolio Section -->
+    <!-- Updated Portfolio Section with real projects and appropriate links -->
+    <section id="portfolio" class="section">
+      <div class="container">
+        <h2 class="section-title">My Portfolio</h2>
+        <div class="portfolio-filters">
+          <button class="filter-btn active" data-filter="all">All</button>
+          <button class="filter-btn" data-filter="web">Web</button>
+          <button class="filter-btn" data-filter="design">Design</button>
+          <button class="filter-btn" data-filter="photo">Photography</button>
+        </div>
+        <div class="portfolio-grid">
+          <!-- Web Projects - Link to GitHub -->
+          <div class="portfolio-item web">
+            <div class="portfolio-img">
+              <img
+                src="https://images.unsplash.com/photo-1551650975-87deedd944c3?q=80&w=1000"
+                alt="E-commerce Platform"
+              />
+            </div>
+            <div class="portfolio-overlay">
+              <h3>NexShop E-commerce</h3>
+              <p>
+                Full-stack React & Node.js e-commerce platform with integrated
+                payment gateway
+              </p>
+              <a
+                href="https://github.com/username/nexshop-ecommerce"
+                class="portfolio-link"
+                target="_blank"
+                >View on GitHub</a
+              >
+            </div>
+          </div>
+          <div class="portfolio-item web">
+            <div class="portfolio-img">
+              <img
+                src="https://images.unsplash.com/photo-1559028012-481c04fa702d?q=80&w=1000"
+                alt="Task Management App"
+              />
+            </div>
+            <div class="portfolio-overlay">
+              <h3>TaskFlow</h3>
+              <p>
+                Collaborative task management app with real-time updates using
+                Vue.js and Firebase
+              </p>
+              <a
+                href="https://github.com/username/taskflow-app"
+                class="portfolio-link"
+                target="_blank"
+                >View on GitHub</a
+              >
+            </div>
+          </div>
+          <div class="portfolio-item web">
+            <div class="portfolio-img">
+              <img
+                src="https://images.unsplash.com/photo-1553702446-4a60ef0cc92b?q=80&w=1000"
+                alt="Analytics Dashboard"
+              />
+            </div>
+            <div class="portfolio-overlay">
+              <h3>DataViz Dashboard</h3>
+              <p>
+                Interactive data visualization dashboard with D3.js and React
+              </p>
+              <a
+                href="https://github.com/username/dataviz-dashboard"
+                class="portfolio-link"
+                target="_blank"
+                >View on GitHub</a
+              >
+            </div>
+          </div>
+
+          <!-- Design Projects - Link to Figma -->
+          <div class="portfolio-item design">
+            <div class="portfolio-img">
+              <img
+                src="https://images.unsplash.com/photo-1609921141835-710b7fa6e438?q=80&w=1000"
+                alt="Mobile App Design"
+              />
+            </div>
+            <div class="portfolio-overlay">
+              <h3>HealthSync App</h3>
+              <p>
+                Health tracking application with intuitive user interface and
+                wellness analytics
+              </p>
+              <a
+                href="https://www.figma.com/file/healthsync-app-design"
+                class="portfolio-link"
+                target="_blank"
+                >View on Figma</a
+              >
+            </div>
+          </div>
+          <div class="portfolio-item design">
+            <div class="portfolio-img">
+              <img
+                src="https://images.unsplash.com/photo-1542744094-3a31f272c490?q=80&w=1000"
+                alt="Brand Design System"
+              />
+            </div>
+            <div class="portfolio-overlay">
+              <h3>TechNova Brand System</h3>
+              <p>
+                Comprehensive design system for tech startup including component
+                library and style guide
+              </p>
+              <a
+                href="https://www.figma.com/file/technova-design-system"
+                class="portfolio-link"
+                target="_blank"
+                >View on Figma</a
+              >
+            </div>
+          </div>
+          <div class="portfolio-item design">
+            <div class="portfolio-img">
+              <img
+                src="https://images.unsplash.com/photo-1533750516278-125e7d4ea3c6?q=80&w=1000"
+                alt="E-learning Platform"
+              />
+            </div>
+            <div class="portfolio-overlay">
+              <h3>EduLearn Platform</h3>
+              <p>
+                User experience redesign for educational platform with
+                accessibility improvements
+              </p>
+              <a
+                href="https://www.figma.com/file/edulearn-platform-ux"
+                class="portfolio-link"
+                target="_blank"
+                >View on Figma</a
+              >
+            </div>
+          </div>
+
+          <!-- Photography Projects - Link to Instagram -->
+          <div class="portfolio-item photo">
+            <div class="portfolio-img">
+              <img
+                src="https://images.unsplash.com/photo-1514565131-fce0801e5785?q=80&w=1000"
+                alt="Urban Landscapes"
+              />
+            </div>
+            <div class="portfolio-overlay">
+              <h3>Urban Perspectives</h3>
+              <p>
+                City architecture photography series exploring urban geometry
+                and light
+              </p>
+              <a
+                href="https://www.instagram.com/username/urban-perspectives"
+                class="portfolio-link"
+                target="_blank"
+                >View on Instagram</a
+              >
+            </div>
+          </div>
+          <div class="portfolio-item photo">
+            <div class="portfolio-img">
+              <img
+                src="https://images.unsplash.com/photo-1555212697-194d092e3b8f?q=80&w=1000"
+                alt="Portrait Series"
+              />
+            </div>
+            <div class="portfolio-overlay">
+              <h3>Human Stories</h3>
+              <p>
+                Emotional portraiture exploration highlighting diverse faces and
+                experiences
+              </p>
+              <a
+                href="https://www.instagram.com/username/human-stories"
+                class="portfolio-link"
+                target="_blank"
+                >View on Instagram</a
+              >
+            </div>
+          </div>
+          <div class="portfolio-item photo">
+            <div class="portfolio-img">
+              <img
+                src="https://images.unsplash.com/photo-1616401784845-180882ba9ba8?q=80&w=1000"
+                alt="Product Photography"
+              />
+            </div>
+            <div class="portfolio-overlay">
+              <h3>Product Essence</h3>
+              <p>
+                Commercial product photography with creative lighting and
+                composition
+              </p>
+              <a
+                href="https://www.instagram.com/username/product-essence"
+                class="portfolio-link"
+                target="_blank"
+                >View on Instagram</a
+              >
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Testimonials Section -->
+    <section id="testimonials" class="section">
+      <div class="container">
+        <h2 class="section-title">Client Testimonials</h2>
+        <div class="testimonial-slider">
+          <div class="testimonial-track">
+            <div class="testimonial">
+              <div class="testimonial-content">
+                <p>
+                  "Aliester's web development skills transformed our online
+                  presence. The site is not only visually stunning but also
+                  performs exceptionally well."
+                </p>
+                <div class="testimonial-author">
+                  <img
+                    src="https://source.unsplash.com/random/100x100/?portrait,man"
+                    alt="Client photo"
+                  />
+                  <div>
+                    <h4>Robert Chen</h4>
+                    <p>CEO, TechVision</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="testimonial">
+              <div class="testimonial-content">
+                <p>
+                  "The UI/UX design work Aliester did for our app dramatically
+                  improved our user engagement metrics. A true professional who
+                  understands both aesthetics and functionality."
+                </p>
+                <div class="testimonial-author">
+                  <img
+                    src="https://source.unsplash.com/random/100x100/?portrait,woman"
+                    alt="Client photo"
+                  />
+                  <div>
+                    <h4>Sarah Johnson</h4>
+                    <p>Product Manager, AppWorks</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="testimonial">
+              <div class="testimonial-content">
+                <p>
+                  "Aliester's photography captured the essence of our brand
+                  perfectly. The images tell our story in a way words never
+                  could. Highly recommended!"
+                </p>
+                <div class="testimonial-author">
+                  <img
+                    src="https://source.unsplash.com/random/100x100/?portrait,person"
+                    alt="Client photo"
+                  />
+                  <div>
+                    <h4>Miguel Santos</h4>
+                    <p>Marketing Director, StyleCo</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="testimonial-controls">
+            <button class="prev-testimonial" aria-label="Previous testimonial">
+              <i data-lucide="chevron-left"></i>
+            </button>
+            <div class="testimonial-dots"></div>
+            <button class="next-testimonial" aria-label="Next testimonial">
+              <i data-lucide="chevron-right"></i>
+            </button>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="section">
+      <div class="container">
+        <h2 class="section-title">Get In Touch</h2>
+        <div class="contact-container">
+          <form class="contact-form">
+            <div class="form-group">
+              <label for="name">Name</label>
+              <input type="text" id="name" name="name" required />
+              <span class="form-focus-effect"></span>
+            </div>
+            <div class="form-group">
+              <label for="email">Email</label>
+              <input type="email" id="email" name="email" required />
+              <span class="form-focus-effect"></span>
+            </div>
+            <div class="form-group">
+              <label for="message">Message</label>
+              <textarea
+                id="message"
+                name="message"
+                rows="5"
+                required
+              ></textarea>
+              <span class="form-focus-effect"></span>
+            </div>
+            <button type="submit" class="btn btn-primary">Send Message</button>
+          </form>
+          <div class="contact-info">
+            <h3>Let's Connect</h3>
+            <p>
+              Whether you're interested in working together or just want to say
+              hello, I'd love to hear from you!
+            </p>
+            <div class="social-links">
+              <a
+                href="https://www.linkedin.com/in/fabertjody/"
+                class="social-link"
+                aria-label="LinkedIn"
+              >
+                <i data-lucide="linkedin"></i>
+              </a>
+              <a
+                href="https://github.com/Fabert-Manuel"
+                class="social-link"
+                aria-label="GitHub"
+              >
+                <i data-lucide="github"></i>
+              </a>
+              <a
+                href="https://www.instagram.com/_faberttt/"
+                class="social-link"
+                aria-label="Instagram"
+              >
+                <i data-lucide="instagram"></i>
+              </a>
+              <a
+                href="https://x.com/ALSR1002"
+                class="social-link"
+                aria-label="Twitter"
+              >
+                <i data-lucide="twitter"></i>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+      <div class="container">
+        <div class="footer-content">
+          <p>&copy; 2025 Aliester. All rights reserved.</p>
+          <button id="footer-theme-toggle" aria-label="Toggle dark mode">
+            <i data-lucide="sun" class="light-icon"></i>
+            <i data-lucide="moon" class="dark-icon"></i>
+          </button>
+        </div>
+      </div>
+    </footer>
+
+    <!-- Back to Top Button -->
+    <button id="back-to-top" aria-label="Back to top">
+      <i data-lucide="chevron-up"></i>
+    </button>
+
+    <!-- GSAP -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script>
+
+    <!-- Main Script -->
+    <script src="script.js"></script>
+  </body>
+</html>
